@@ -1,0 +1,54 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "firstname": "Sunny",
+      "lastname": "Kumar",
+      "email": "sunny@gmail.com",
+      "mobile": "7261020937",
+      "salary": "$ 47, 000"
+    },
+    {
+      "id": 2,
+      "firstname": "Ravi",
+      "lastname": "Sharma",
+      "email": "ravi@gmail.com",
+      "mobile": "45454454",
+      "salary": "$ 754854"
+    },
+    {
+      "id": 3,
+      "firstname": "Suraj",
+      "lastname": "Kumar",
+      "email": "suraj@gmail.com",
+      "mobile": "123123123",
+      "salary": "123"
+    },
+    {
+      "id": 4,
+      "firstname": "Siya",
+      "lastname": "Srivastava",
+      "email": "siya@gmail.com",
+      "mobile": "23232323",
+      "salary": "2323"
+    },
+    {
+      "id": 5,
+      "firstname": "Harry",
+      "lastname": "Potter",
+      "email": "potterhead@gmail.com",
+      "mobile": "9090909090",
+      "salary": "5000"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

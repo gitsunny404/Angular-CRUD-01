@@ -4,15 +4,22 @@ This is the tutorial of crud operations in angular using API.
 
 Steps :     Description
 01          Create an angular application and run it
+
             ng new app  
+            
             ng serve
 
 02          Add Bootstrap to angular application
             npm install bootstrap
             For adding it to the application
             Go to angular.json
-            in styles [] add : node_modules/bootstrap/dist/css/bootstrap.min.css
-            andin script [] : node_modules/bootstrap/dist/js/bootstrap.min.js
+            in styles [] add : 
+            
+            node_modules/bootstrap/dist/css/bootstrap.min.css
+            
+            andin script [] : 
+            
+            node_modules/bootstrap/dist/js/bootstrap.min.js
 
 03          create registration form and a table to view the data
 
@@ -23,6 +30,7 @@ Steps :     Description
 06          add formControlName = "firstname" etc to each input field
 
 07          add code for the form like
+
             registrationForm !: FormGroup;
             ngOnInit(): void {
                 this.registrationForm = this.formbuilder.group({
@@ -36,6 +44,7 @@ Steps :     Description
             }
 
 08          Create a modal for the form taking data eg. 
+
             export class EmployeeModal{
                 id : number = 0;
                 firstname : string = '';
@@ -45,11 +54,21 @@ Steps :     Description
                 salary : string = '';
             }
 
-09          create api service by ng g s api & import HttpClient in it &            HttpClientModule in app.module.ts
+09          create api service by 
 
-10          install json-server via npm i json-server
+              ng g s api 
+              
+              & import HttpClient in it &            HttpClientModule in app.module.ts
 
-11          Run json-server by : json-server --watch db.json for running localhost:3000
+10          install json-server via 
+
+            npm i json-server
+
+11          Run json-server by : 
+  
+            json-server --watch db.json 
+            
+            for running localhost:3000
 
 12          constructor(private http : HttpClient) { }
             create post method to send data to json server

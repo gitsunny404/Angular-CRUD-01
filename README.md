@@ -108,6 +108,7 @@ Steps :     Description
             }
 
 15          use this get api in any component.ts
+
             gettingData(){
                 this.myapi.getData().subscribe(res=>{
                 this.EmployeeData = res;
@@ -120,6 +121,7 @@ Steps :     Description
             EmployeeData : any = '';
 
 16          Use *ngFor loop in html to get data from json-server to the html table
+
             <table class="table">
                 <thead>
                 <tr>
@@ -158,11 +160,13 @@ Steps :     Description
             </table>
 
 17          Create a delete api 
+
                         deleteData(id:any){
                 return this.http.delete<any>("http://localhost:3000/employee/"+id)
             }
 
 18          create a function to use delete api in any component
+
             deletingData(employee:any){
                 this.myapi.deleteData(employee.id).subscribe(res =>{
                 alert("Data has been deleted...")
@@ -172,6 +176,8 @@ Steps :     Description
             add each button to (click)='given post/delete' operation
 
 19          create a onEdit function to load the data feeded data from the json to the form for the update feature
+
+
                 onEdit(employee:any){
                 this.EmployeeModalObj.id = employee.id;
                 this.registrationForm.controls['firstname'].setValue(employee.firstname);
@@ -182,12 +188,14 @@ Steps :     Description
             }
 
 20            create an update api 
+
                 updateData(employee:any, id:number){
                     return this.http.put<any>("http://localhost:3000/employee/"+id, employee);
                 }
 
 21          create update function to use update api
             -like post data use 
+            
             updatingData(){
                 this.EmployeeModalObj.firstname = this.registrationForm.value.firstname;
                 this.EmployeeModalObj.lastname = this.registrationForm.value.lastname;
